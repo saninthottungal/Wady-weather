@@ -12,10 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        //colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
-        canvasColor: const Color.fromARGB(255, 23, 25, 31),
-      ),
-      home: ScreenHome(),
+          //colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+          canvasColor: const Color.fromARGB(255, 23, 25, 31),
+          textTheme:
+              const TextTheme(bodyMedium: TextStyle(color: Colors.white))),
+      home: const ScreenHome(),
     );
   }
 }
