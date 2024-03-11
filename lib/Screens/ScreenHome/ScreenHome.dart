@@ -28,7 +28,7 @@ class _ScreenHomeState extends State<ScreenHome> {
       backgroundColor: backgroundColor,
       body: pages[currentPage],
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(bottom: 20, left: 50, right: 50),
+        padding: const EdgeInsets.only(bottom: 30, left: 50, right: 50),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: BottomNavigationBar(

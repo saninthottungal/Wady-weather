@@ -1,13 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
+import 'package:wady/core/Constants.dart';
 
 class ScreenLobby extends StatelessWidget {
   const ScreenLobby({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      decoration: const BoxDecoration(gradient: backgroundGradient),
       height: double.infinity,
       width: double.infinity,
       child: Center(
@@ -16,29 +18,72 @@ class ScreenLobby extends StatelessWidget {
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.10,
             ),
-            const Text("July 20, 2022"),
-            const SizedBox(height: 20),
+            Text(
+              "July 20, 2022",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white.withOpacity(0.6),
+                  fontSize: 16),
+            ),
+            const SizedBox(height: 6),
             const Text(
               "Barcelona",
-              style: TextStyle(fontSize: 30),
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1,
+              ),
             ),
-            const SizedBox(height: 20),
-            Image.asset(
-              "assests/images/cloudysunny.png",
-              scale: 5,
+            const SizedBox(height: 10),
+            SizedBox(
+              width: 250,
+              height: 250,
+              //color: Colors.red,
+              child: FittedBox(
+                child: Image.asset(
+                  "assests/images/moody.png",
+                ),
+              ),
             ),
-            const SizedBox(height: 5),
+            // const SizedBox(height: 5),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "31",
+                  style: TextStyle(
+                    fontSize: 80,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    bottom: 35,
+                  ),
+                  child: Text(
+                    "\u1d52",
+                    style: TextStyle(
+                      fontSize: 40,
+                      //fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+
             const Text(
-              "31",
-              style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold),
+              "Mostly Sunny",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1,
+              ),
             ),
-            const SizedBox(height: 5),
-            const Text("Mostly Sunny"),
-            const SizedBox(height: 20),
+            const SizedBox(height: 35),
             //container
 
             Container(
-              height: MediaQuery.of(context).size.height * 0.14,
+              height: MediaQuery.of(context).size.height * 0.15,
               width: MediaQuery.of(context).size.width * 0.9,
               //color: Colors.black26,
               decoration: BoxDecoration(
@@ -46,7 +91,7 @@ class ScreenLobby extends StatelessWidget {
                   borderRadius: BorderRadius.circular(40)),
 
               child: Padding(
-                padding: const EdgeInsets.only(top: 25, left: 50),
+                padding: const EdgeInsets.only(top: 30, left: 50),
                 child: Row(
                   children: [
                     const Column(
