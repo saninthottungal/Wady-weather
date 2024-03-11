@@ -61,7 +61,7 @@ class _ScreenHomeState extends State<ScreenHome> {
 
             currentIndex: currentPage,
             onTap: (newIndex) {
-              print(newIndex);
+              // print(newIndex);
               setState(() {
                 currentPage = newIndex;
               });
