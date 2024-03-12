@@ -64,7 +64,6 @@ class ScreenLobby extends StatelessWidget {
                     "\u1d52",
                     style: TextStyle(
                       fontSize: 40,
-                      //fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
