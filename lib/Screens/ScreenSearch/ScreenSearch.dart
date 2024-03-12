@@ -46,19 +46,19 @@ class ScreenSearch extends StatelessWidget {
                       borderRadius: BorderRadius.circular(50),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         top: 20,
                         left: 30,
                       ),
                       child: ListTile(
-                        title: Text(
+                        title: const Text(
                           "Coimbatore",
                           style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        subtitle: Row(
+                        subtitle: const Row(
                           children: [
                             Text(
                               "31",
